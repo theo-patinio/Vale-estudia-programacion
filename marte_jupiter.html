@@ -18,14 +18,17 @@
         if (planeta == 1 )
         {
             peso_final= peso * g_marte / g_tierra;
+            var planeta_elegido = "marte" ;
+        
         }
         else
         {
             peso_final= peso * g_jupiter / g_tierra;
+            var planeta_elegido = "jupiter" ;
 
         }
         peso_final= parseInt (peso_final) ;
-        document.write ("tu peso en marte es <strong>" + peso_final + " kilos </strong>" );
+        document.write ("tu peso en " + planeta_elegido +" es <strong>" + peso_final + " kilos </strong>" );
     </script>
 
 </body>
